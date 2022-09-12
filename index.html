@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Let’s Travel – Một trang web mới sử dụng WordPress</title>
+     <link rel="stylesheet" href="src/style.css">
+     <link rel="stylesheet" href="Homepage/Home_page.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+     <div class="mark">
+
+     </div>
+     <!-- Menu -->
+     <nav class="menu">
+          <!-- Menu-desktop -->
+          <div class="menu-desktop">
+               <div class="logo">
+                    <a href="index.html" title="Let’s Travel - Một trang web mới sử dụng WordPress">
+                         <img src="Homepage/image/logo_dark.png" alt="">
+                    </a>
+               </div>
+               <div>
+                    <ul class="menu-item">
+                         <li class="menu-content">
+                              <a class="menu-link" href="index.html">
+                                   Trang chủ
+                              </a>
+                         </li>
+                         <li class="menu-content">
+                              <a class="menu-link" href="Introduce/Introduce.html">
+                                   Giới thiệu
+                              </a>
+                         </li>
+                         <li class="menu-content">
+                              <a class="menu-link" href="Tour/Tour.html">
+                                   Tour Du Lịch
+                              </a>
+                              <ul class="sub-menu">
+                                   <!-- Miền Bắc-->
+                                   <li class="sub-menu-item">
+                                        <a href="">
+                                             Miền Bắc
+                                        </a>
+                                        <ul>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Hà Nội </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Sapa </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Vịnh Hạ Long </span>
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                   </li>
+                                   <!-- Miền Trung -->
+                                   <li class="sub-menu-item">
+                                        <a href="">
+                                             Miền Trung
+                                        </a>
+                                        <ul>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Huế </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Đà Nẵng </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Phú Yên </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Nha Trang </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Quang Nam </span>
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                   </li>
+                                   <!-- Miền Nam-->
+                                   <li class="sub-menu-item">
+                                        <a href="">
+                                             Miền Nam
+                                        </a>
+                                        <ul>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Đà Lạt </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Côn Đảo </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Phan Thiết </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Phú Quốc </span>
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                   </li>
+                              </ul>
+                         </li>
+                         <li class="menu-content">
+                              <a class="menu-link" href="Hotel/Hotel.html">
+                                   Khách Sạn
+                              </a>
+                         </li>
+                         <li class="menu-content">
+                              <a class="menu-link" href="News/News.html">
+                                   Tin Tức
+                              </a>
+                         </li>
+                         <li class="menu-content">
+                              <a class="menu-link" href="Contact/Contact.html">
+                                   Liên Hệ
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+          <!-- Menu-mobile -->
+          <div class="menu-mobile">
+               <div class="menu-icon">
+                    <button>
+                         <i class="fas fa-bars"></i>
+                    </button>
+                    <!-- Sub-menu -->
+                    <ul class="sub-menu-mobile">
+                         <li class="menu-content-mobile">
+                              <form class="menu-link" action="#">
+                                   <input type="search" placeholder="Tìm kiếm...">
+                                   <button>
+                                        <i class="fas fa-search"></i>
+                                   </button>
+                              </form>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link" href="index.html">
+                                   Trang chủ
+                              </a>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link" href="Introduce/Introduce.html">
+                                   Giới thiệu
+                              </a>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link" href="Tour/Tour.html">
+                                   Tour Du Lịch
+                                   <i class="fas fa-angle-down"></i>
+                              </a>
+                              <ul class="sub-menu">
+                                   <!-- Miền Bắc-->
+                                   <li class="sub-menu-item">
+                                        <a href="#">
+                                             Miền Bắc
+                                        </a>
+                                        <ul>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Hà Nội </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Sapa </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Vịnh Hạ Long </span>
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                   </li>
+                                   <!-- Miền Trung -->
+                                   <li class="sub-menu-item">
+                                        <a href="">
+                                             Miền Trung
+                                        </a>
+                                        <ul>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Huế </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Đà Nẵng </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Phú Yên </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Nha Trang </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Quang Nam </span>
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                   </li>
+                                   <!-- Miền Nam-->
+                                   <li class="sub-menu-item">
+                                        <a href="#">
+                                             Miền Nam
+                                        </a>
+                                        <ul>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Đà Lạt </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Côn Đảo </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Phan Thiết </span>
+                                                  </a>
+                                             </li>
+                                             <li>
+                                                  <a class="child-link" href="#">
+                                                       <span> Phú Quốc </span>
+                                                  </a>
+                                             </li>
+                                        </ul>
+                                   </li>
+                              </ul>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link" href="Hotel/Hotel.html">
+                                   Khách Sạn
+                              </a>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link" href="News/News.html">
+                                   Tin Tức
+                              </a>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link" href="Contact/Contact.html">
+                                   Liên Hệ
+                              </a>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link" href="#">
+                                   Đăng nhập
+                              </a>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link menu-link2" href="#">
+                                   <img src="Homepage/image/icon-phone.svg" alt="" width="91">
+                                   <span>
+                                        Hotline
+                                        <br>
+                                        0126 922 0162
+                                   </span>
+                              </a>
+                         </li>
+                         <li class="menu-content-mobile">
+                              <a class="menu-link menu-link2" href="#">
+                                   <img src="Homepage/image/icon-cart.svg" alt="" width="91">
+                                   <span>
+                                        Những kiến thức bổ ích
+                                   </span>
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+               <div class="logo logo-mobile">
+                    <a href="#">
+                         <img src="Homepage/image/logo_dark.png" alt="">
+                    </a>
+               </div>
+               <div>
+                    <a href="#">
+                         <i class="fas fa-shopping-cart"></i>
+                    </a>
+               </div>
+          </div>
+     </nav>
+     <!-- Header -->
+     <div class="section-header">
+          <div class="bg bg-header">
+               <div class="overplay"></div>
+               <div class="overview content description header">
+                    <div class="header-content">
+                         <h2 class="text-uppercase">
+                              Công ty <span>Mona</span> travel
+                         </h2>
+                         <h4>
+                              Chuyên tổ chức các tour du lịch trong nước
+                         </h4>
+                         <p class="sub-header">
+                              Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc
+                              và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu
+                              tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn
+                              văn bản chỉ gồm nội dung kiểu “Nội dung, nội dung, nội dung”
+                              là nó khiến văn bản giống thật hơn, bình thường hơn.
+                         </p>
+                         <a class="btn btn-header" href="#">
+                              <span> Xem ngay </span>
+                              <i class="fas fa-map-marker-alt"></i>
+                         </a>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- Search -->
+     <div class="overview search">
+          <div>
+               <ul class="card-item card-search">
+                    <li>
+                         <a class="search-link left" href="#">
+                              Tìm Tour
+                         </a>
+                    </li>
+                    <li>
+                         <a class="search-link right" href="#">
+                              Tìm Hotel
+                         </a>
+                    </li>
+               </ul>
+          </div>
+          <div>
+               <label class="search-box" for="#">
+                    Danh mục
+                    <i class="fas fa-angle-down"></i>
+                    <ul class="sub-box category">
+                         <li>
+                              <label class="containercb">Uncategorized
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containercb">Khách sạn
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containercb">Tour du lịch
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                              <ul class="list-border">
+                                   <li>
+                                        <label class="containercb">Miền Bắc
+                                             <input type="checkbox">
+                                             <span class="checkmarkcb"></span>
+                                        </label>
+                                        <ul class="list-border">
+                                             <li>
+                                                  <label class="containercb">Hà Nội
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Sapa
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Vịnh Hạ Long
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                        </ul>
+                                   </li>
+                                   <li>
+                                        <label class="containercb">Miền Nam
+                                             <input type="checkbox">
+                                             <span class="checkmarkcb"></span>
+                                        </label>
+                                        <ul class="list-border">
+                                             <li>
+                                                  <label class="containercb">Côn Đảo
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Đà Lạt
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Phan Thiết
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Phú Quốc
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                        </ul>
+                                   </li>
+                                   <li>
+                                        <label class="containercb">Miền Trung
+                                             <input type="checkbox">
+                                             <span class="checkmarkcb"></span>
+                                        </label>
+                                        <ul class="list-border">
+                                             <li>
+                                                  <label class="containercb">Đà Nẵng
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Huế
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Nha Trang
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Phú Yên
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                             <li>
+                                                  <label class="containercb">Quảng Nam
+                                                       <input type="checkbox">
+                                                       <span class="checkmarkcb"></span>
+                                                  </label>
+                                             </li>
+                                        </ul>
+                                   </li>
+                              </ul>
+                         </li>
+                    </ul>
+               </label>
+               <label class="search-box" for="#">
+                    Giá
+                    <i class="fas fa-angle-down"></i>
+                    <ul class="sub-box price">
+                         <li>
+                              <label class="containerbt">All
+                                   <input type="radio" checked="checked" name="radio">
+                                   <span class="checkmarkbt"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containerbt">
+                                   0&nbsp;<span>đ</span> - 2,000,000&nbsp;<span>đ</span>
+                                   <input type="radio" name="radio">
+                                   <span class="checkmarkbt"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containerbt">
+                                   2,000,000&nbsp;<span>đ</span> - 5,000,000&nbsp;<span>đ</span>
+                                   <input type="radio" name="radio">
+                                   <span class="checkmarkbt"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containerbt">
+                                   5,000,000&nbsp;<span>đ</span> - 10,000,000&nbsp;<span>đ</span>
+                                   <input type="radio" name="radio">
+                                   <span class="checkmarkbt"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containerbt">
+                                   10,000,000&nbsp;<span>đ</span> - 20,000,000&nbsp;<span>đ</span>
+                                   <input type="radio" name="radio">
+                                   <span class="checkmarkbt"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containerbt">
+                                   20,000,000&nbsp;<span>đ</span> - 50,000,000&nbsp;<span>đ</span>
+                                   <input type="radio" name="radio">
+                                   <span class="checkmarkbt"></span>
+                              </label>
+                         </li>
+                    </ul>
+               </label>
+               <label class="search-box" for="#">
+                    Số ngày
+                    <i class="fas fa-angle-down"></i>
+                    <ul class="sub-box day">
+                         <li>
+                              <label class="containercb">10
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containercb">2
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containercb">3
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containercb">5
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containercb">7
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containercb">9
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                    </ul>
+               </label>
+               <label class="search-box" for="#">
+                    Nơi khởi hành
+                    <i class="fas fa-angle-down"></i>
+                    <ul class="sub-box start">
+                         <li>
+                              <label class="containercb">Hà Nội
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                         <li>
+                              <label class="containercb">Hồ Chí Minh
+                                   <input type="checkbox">
+                                   <span class="checkmarkcb"></span>
+                              </label>
+                         </li>
+                    </ul>
+               </label>
+               <label class="search-box" for="discount">
+                    Giảm giá <input type="checkbox" name="discount" id="discount">
+               </label>
+               <label for="#">
+                    <a class="btn btn-search" href="#"> Tìm kiếm </a>
+               </label>
+          </div>
+     </div>
+     <!-- The most attractive tours 2020 -->
+     <div class="tours-2020">
+          <div class="overview content">
+               <div class="distance">
+                    <h2 class="title">
+                         Các tour hấp dẫn nhất 2020
+                    </h2>
+                    <p>
+                         Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc.
+                    </p>
+               </div>
+               <div class="card-item">
+                    <!-- Sapa - Lào Cai -->
+                    <div class="card-content3 card-animation distance">
+                         <div class="card-image tours-image">
+                              <img src="Homepage/image/Sapa.jpg" alt="">
+                         </div>
+                         <div class="card-content">
+                              <h2>
+                                   Sapa - Lào Cai
+                              </h2>
+                              <p class="card-icon">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                              </p>
+                              <p class="sub-content">
+                                   Giá tour: $200
+                              </p>
+                              <a href="#" class="btn">
+                                   Xem ngay
+                              </a>
+                         </div>
+                    </div>
+                    <!-- Cố đô Huế -->
+                    <div class="card-content3 card-animation distance">
+                         <div class="card-image tours-image">
+                              <img src="Homepage/image/Hue.jpg" alt="">
+                         </div>
+                         <div class="card-content">
+                              <h2>
+                                   Cố đô Huế
+                              </h2>
+                              <p class="card-icon">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                              </p>
+                              <p class="sub-content">
+                                   Giá tour: $220
+                              </p>
+                              <a href="#" class="btn">
+                                   Xem ngay
+                              </a>
+                         </div>
+                    </div>
+                    <!-- Vịnh Hạ Long -->
+                    <div class="card-content3 card-animation distance">
+                         <div class="card-image tours-image">
+                              <img src="Homepage/image/HaLong.jpg" alt="">
+                         </div>
+                         <div class="card-content">
+                              <h2>
+                                   Vịnh Hạ Long
+                              </h2>
+                              <p class="card-icon">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                              </p>
+                              <p class="sub-content">
+                                   Giá tour: $250
+                              </p>
+                              <a href="#" class="btn">
+                                   Xem ngay
+                              </a>
+                         </div>
+                    </div>
+                    <!-- Miền Tây -->
+                    <div class="card-content3 card-animation distance">
+                         <div class="card-image tours-image">
+                              <img src="Homepage/image/Mien-Tay.jpg" alt="">
+                         </div>
+                         <div class="card-content">
+                              <h2>
+                                   Miền Tây
+                              </h2>
+                              <p class="card-icon">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                              </p>
+                              <p class="sub-content">
+                                   Giá tour: $100
+                              </p>
+                              <a href="#" class="btn">
+                                   Xem ngay
+                              </a>
+                         </div>
+                    </div>
+                    <!-- Đà Lạt -->
+                    <div class="card-content3 card-animation distance">
+                         <div class="card-image tours-image">
+                              <img src="Homepage/image/Da-Lat.jpg" alt="">
+                         </div>
+                         <div class="card-content">
+                              <h2>
+                                   Đà Lạt
+                              </h2>
+                              <p class="card-icon">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                              </p>
+                              <p class="sub-content">
+                                   Giá tour: $250
+                              </p>
+                              <a href="#" class="btn">
+                                   Xem ngay
+                              </a>
+                         </div>
+                    </div>
+                    <!-- Hội An -->
+                    <div class="card-content3 card-animation distance">
+                         <div class="card-image tours-image">
+                              <img src="Homepage/image/Hoi-An.jpg" alt="">
+                         </div>
+                         <div class="card-content">
+                              <h2>
+                                   Hội An
+                              </h2>
+                              <p class="card-icon">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                              </p>
+                              <p class="sub-content">
+                                   Giá tour: $300
+                              </p>
+                              <a href="#" class="btn">
+                                   Xem ngay
+                              </a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- Resort -->
+     <div class="section-header">
+          <div class=" bg bg-resort">
+               <div class="overplay"></div>
+               <div class="overview content description resort">
+                    <div class="header-content">
+                         <h4>
+                              Giảm giá 30%
+                         </h4>
+                         <p class="card-icon">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                         </p>
+                         <h2 class="text-uppercase">
+                              Nghỉ dưỡng tại phú quốc
+                         </h2>
+                         <p class="sub-resort">
+                              Từ 5/12 đến 12/12
+                         </p>
+                         <a class="btn btn-header" href="#">
+                              <span> Xem ngay </span>
+                         </a>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- Attractive tours -->
+     <div class="tours-2020">
+          <div class="overview content">
+               <div class="distance">
+                    <h2 class="title">
+                         Những tour hút khách
+                    </h2>
+                    <p>
+                         Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc.
+                    </p>
+               </div>
+          </div>
+          <div class="card-item">
+               <!-- Sapa -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/sapa1.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Sapa
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+               <!-- Nha Trang -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/Nha-Trang.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Nha Trang
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+               <!-- Hà Nội -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/Ha-Noi.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Hà Nội
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+               <!-- Sài Gòn -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/Sai-Gon.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Sài Gòn
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+               <!-- Đà Lạt -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/Da-Lat.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Đà Lạt
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+               <!-- Cần Thơ -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/Can-Tho.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Cần Thơ
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+               <!-- Đà Nẵng -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/Da-Nang.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Đà Nẵng
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+               <!-- Đảo Phú Quốc -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/Dao-Phu-Quoc.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Đảo Phú Quốc
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+               <!-- Kinh Thành Huế -->
+               <div class="card-content3 card-animation distance-attractive">
+                    <div class="card-image attractive-image">
+                         <img src="Homepage/image/Kinh-Thanh-Hue.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content">
+                         <h2>
+                              Kinh Thành Huế
+                         </h2>
+                         <p class="sub-content">
+                              5 ngày 4 đêm
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- Famous tourist places -->
+     <div class="overview famous">
+          <div class="distance">
+               <h2 class="title">
+                    Những địa điểm du lịch nổi tiếng
+               </h2>
+               <p>
+                    Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc.
+               </p>
+          </div>
+          <div class="card-item">
+               <!-- Bà Nà Hills -->
+               <div class="card-content3 distance">
+                    <div class="card-image famous-image">
+                         <img src="Homepage/image/BaNa-1.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content famous-content">
+                         <p class="card-icon">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                         </p>
+                         <h2 class="title">
+                              Bà Nà Hills
+                         </h2>
+                         <h3>
+                              Đà Nẵng
+                         </h3>
+                         <p class="famous-sub">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                              magna aliquam erat volutpat.
+                         </p>
+                         <a class="btn" href="#">
+                              Xem ngay
+                         </a>
+                    </div>
+               </div>
+               <!-- Vinpearl Land -->
+               <div class="card-content3 distance">
+                    <div class="card-image famous-image">
+                         <img src="Homepage/image/vinpearl.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content famous-content">
+                         <p class="card-icon">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                         </p>
+                         <h2 class="title">
+                              Vinpearl Land
+                         </h2>
+                         <h3>
+                              Nha Trang
+                         </h3>
+                         <p class="famous-sub">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                              magna aliquam erat volutpat.
+                         </p>
+                         <a class="btn" href="#">
+                              Xem ngay
+                         </a>
+                    </div>
+               </div>
+               <!-- Phố cổ hội an -->
+               <div class="card-content3 distance">
+                    <div class="card-image famous-image">
+                         <img src="Homepage/image/Phoco_hoian.jpg" alt="">
+                         <div class="overplay"></div>
+                    </div>
+                    <div class="card-content famous-content">
+                         <p class="card-icon">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                         </p>
+                         <h2 class="title">
+                              Phố cổ hội an
+                         </h2>
+                         <h3>
+                              Quảng Nam
+                         </h3>
+                         <p class="famous-sub">
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                              magna aliquam erat volutpat.
+                         </p>
+                         <a class="btn" href="#">
+                              Xem ngay
+                         </a>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- Tourist Cities -->
+     <div class="overview">
+          <div class="distance">
+               <h2 class="title">
+                    Các thành phố du lịch
+               </h2>
+               <p>
+                    Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc.
+               </p>
+          </div>
+          <div class="card-item">
+               <div class="card-content2">
+                    <div class="card-item">
+                         <!-- Sapa -->
+                         <div class="card-content2 distance">
+                              <div class="card-image tourist-image">
+                                   <img src="Homepage/image/Sapa.jpg" alt="">
+                                   <div class="overplay"></div>
+                              </div>
+                              <div class="card-content tourist-content">
+                                   <h2 class="title">
+                                        Sapa
+                                   </h2>
+                                   <h4>
+                                        Giá
+                                        <span>300$</span>
+                                        / người
+                                   </h4>
+                                   <a href="#" class="btn">
+                                        Xem ngay
+                                   </a>
+                              </div>
+                         </div>
+                         <!-- Vịnh Ha Long-->
+                         <div class="card-content2 distance">
+                              <div class="card-image tourist-image">
+                                   <img src="Homepage/image/HaLong.jpg" alt="">
+                                   <div class="overplay"></div>
+                              </div>
+                              <div class="card-content tourist-content">
+                                   <h2 class="title">
+                                        Vịnh Hạ Long
+                                   </h2>
+                                   <h4>
+                                        Giá
+                                        <span>300$</span>
+                                        / người
+                                   </h4>
+                                   <a href="#" class="btn">
+                                        Xem ngay
+                                   </a>
+                              </div>
+                         </div>
+                         <!-- Hà Nội-->
+                         <div class="card-content2 distance">
+                              <div class="card-image tourist-image">
+                                   <img src="Homepage/image/Ha-Noi.jpg" alt="">
+                                   <div class="overplay"></div>
+                              </div>
+                              <div class="card-content tourist-content">
+                                   <h2 class="title">
+                                        Hà Nội
+                                   </h2>
+                                   <h4>
+                                        Giá
+                                        <span>300$</span>
+                                        / người
+                                   </h4>
+                                   <a href="#" class="btn">
+                                        Xem ngay
+                                   </a>
+                              </div>
+                         </div>
+                         <!-- Quảng Bình -->
+                         <div class="card-content2 distance">
+                              <div class="card-image tourist-image">
+                                   <img src="Homepage/image/Quang-Binh.jpeg" alt="">
+                                   <div class="overplay"></div>
+                              </div>
+                              <div class="card-content tourist-content">
+                                   <h2 class="title">
+                                        Quảng Bình
+                                   </h2>
+                                   <h4>
+                                        Giá
+                                        <span>300$</span>
+                                        / người
+                                   </h4>
+                                   <a href="#" class="btn">
+                                        Xem ngay
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="card-content2 distance">
+                    <div class="northern-city">
+                         <div class="overplay mark"></div>
+                         <div class="city-content">
+                              <h2>
+                                   Miền bắc
+                              </h2>
+                              <p>
+                                   Chỉ đơn giản là một đoạn văn bản giả, được dùng
+                                   vào việc trình bày và dàn trang phục vụ cho in ấn.
+                                   Chúng ta vẫn biết rằng, làm việc với một đoạn văn
+                                   bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở
+                                   việc tập trung vào yếu tố trình bày văn bản.
+                              </p>
+                              <h4>
+                                   Các thành phố:
+                              </h4>
+                              <ul>
+                                   <li>
+                                        Hà Nội
+                                   </li>
+                                   <li>
+                                        Sapa
+                                   </li>
+                                   <li>
+                                        Hạ Long
+                                   </li>
+                                   <li>
+                                        Điện Biên
+                                   </li>
+                                   <li>
+                                        Quảng Bình
+                                   </li>
+                                   <li>
+                                        Thanh Hóa
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <div class="card-content2 distance">
+                    <div class="southern-city">
+                         <div class="overplay mark"></div>
+                         <div class="city-content">
+                              <h2>
+                                   Miền nam
+                              </h2>
+                              <p>
+                                   Chỉ đơn giản là một đoạn văn bản giả, được dùng
+                                   vào việc trình bày và dàn trang phục vụ cho in ấn.
+                                   Chúng ta vẫn biết rằng, làm việc với một đoạn văn
+                                   bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở
+                                   việc tập trung vào yếu tố trình bày văn bản.
+                              </p>
+                              <h4>
+                                   Các thành phố:
+                              </h4>
+                              <ul>
+                                   <li>
+                                        Đà Lạt
+                                   </li>
+                                   <li>
+                                        Nha Trang
+                                   </li>
+                                   <li>
+                                        TP.HCM
+                                   </li>
+                                   <li>
+                                        Cần Thơ
+                                   </li>
+                                   <li>
+                                        Phú Quốc
+                                   </li>
+                                   <li>
+                                        Phan Thiết
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+               <div class="card-content2">
+                    <div class="card-item">
+                         <!-- Cần Thơ -->
+                         <div class="card-content2 distance">
+                              <div class="card-image tourist-image">
+                                   <img src="Homepage/image/Can-Tho.jpg" alt="">
+                                   <div class="overplay"></div>
+                              </div>
+                              <div class="card-content tourist-content">
+                                   <h2 class="title">
+                                        Sapa
+                                   </h2>
+                                   <h4>
+                                        Giá
+                                        <span>300$</span>
+                                        / người
+                                   </h4>
+                                   <a href="#" class="btn">
+                                        Xem ngay
+                                   </a>
+                              </div>
+                         </div>
+                         <!-- Đà Lạt -->
+                         <div class="card-content2 distance">
+                              <div class="card-image tourist-image">
+                                   <img src="Homepage/image/Da-Lat.jpg" alt="">
+                                   <div class="overplay"></div>
+                              </div>
+                              <div class="card-content tourist-content">
+                                   <h2 class="title">
+                                        Đà Lạt
+                                   </h2>
+                                   <h4>
+                                        Giá
+                                        <span>300$</span>
+                                        / người
+                                   </h4>
+                                   <a href="#" class="btn">
+                                        Xem ngay
+                                   </a>
+                              </div>
+                         </div>
+                         <!-- Sài Gòn -->
+                         <div class="card-content2 distance">
+                              <div class="card-image tourist-image">
+                                   <img src="Homepage/image/Sai-Gon.jpg" alt="">
+                                   <div class="overplay"></div>
+                              </div>
+                              <div class="card-content tourist-content">
+                                   <h2 class="title">
+                                        Sài Gòn
+                                   </h2>
+                                   <h4>
+                                        Giá
+                                        <span>300$</span>
+                                        / người
+                                   </h4>
+                                   <a href="#" class="btn">
+                                        Xem ngay
+                                   </a>
+                              </div>
+                         </div>
+                         <!-- Phú Quốc -->
+                         <div class="card-content2 distance">
+                              <div class="card-image tourist-image">
+                                   <img src="Homepage/image/offers_slide_3-247x300.jpg" alt="">
+                                   <div class="overplay"></div>
+                              </div>
+                              <div class="card-content tourist-content">
+                                   <h2 class="title">
+                                        Phú Quốc
+                                   </h2>
+                                   <h4>
+                                        Giá
+                                        <span>300$</span>
+                                        / người
+                                   </h4>
+                                   <a href="#" class="btn">
+                                        Xem ngay
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- Footer -->
+     <footer>
+          <div class="bg-footer">
+               <div class="footer card-item">
+                    <div class="card-footer">
+                         <img class="footer-logo" src="Homepage/image/logo_footer.png" alt="">
+                         <div>
+                              <p>
+                                   <i class="fas fa-map-marker-alt"></i>
+                                   <span class="footer-contact">
+                                        319 c16 Lý Thường Kiệt, Q.11, HCM
+                                   </span>
+                              </p>
+                              <p>
+                                   <i class="fas fa-phone"></i>
+                                   <a class="footer-contact" href="#">
+                                        0126 922 0162
+                                   </a>
+                              </p>
+                              <p>
+                                   <i class="fas fa-envelope"></i>
+                                   <a class="footer-contact" href="#">
+                                        demonhunter@gmail.com
+                                   </a>
+                              </p>
+                              <p class="footer-contact">
+                                   <label for="Contact">
+                                        Đăng ký để được nhận thông tin khuyến mãi một cách nhanh chóng.
+                                   </label>
+                              </p>
+                              <form action="#">
+                                   <input type="email" name="Email" id="Contact" placeholder="Email của bạn">
+                                   <button>
+                                        Gửi
+                                   </button>
+                              </form>
+                         </div>
+                    </div>
+                    <div class="card-footer">
+                         <h3>
+                              Tin Tức
+                         </h3>
+                         <ul>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Bản tin Du Lịch Việt
+                                   </a>
+                              </li>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Cẩm nang du lịch
+                                   </a>
+                              </li>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Khám phá du lịch
+                                   </a>
+                              </li>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Sự kiện du lịch
+                                   </a>
+                              </li>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Tuyển dụng Du Lịch
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+                    <div class="card-footer">
+                         <h3>
+                              Góc khách hàng
+                         </h3>
+                         <ul>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Điều kiện & điều khoản
+                                   </a>
+                              </li>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Quyền riêng tư
+                                   </a>
+                              </li>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Chính sách bảo mật và thông tin
+                                   </a>
+                              </li>
+                              <li>
+                                   <a class="footer-link" href="#">
+                                        Ý kiến khách hàng
+                                   </a>
+                              </li>
+                              <li>
+                                   <a class="footer-link" href="#">Phương thức thanh toán</a>
+                              </li>
+                         </ul>
+                    </div>
+                    <div class="card-footer">
+                         <h3>
+                              Tour Phổ Biến
+                         </h3>
+                         <div class="card-item">
+                              <div class="card-content3 card-animation">
+                                   <a class="card-image footer-image" href="#">
+                                        <img src="Homepage/image/offers_slide_2-247x300.jpg" alt="">
+                                   </a>
+                              </div>
+                              <div class="card-content3 card-animation">
+                                   <a class="card-image footer-image" href="#">
+                                        <img src="Homepage/image/offers_slide_1-247x300.jpg" alt="">
+                                   </a>
+                              </div>
+                              <div class="card-content3 card-animation">
+                                   <a class="card-image footer-image" href="#">
+                                        <img src="Homepage/image/sea_tour_img_1-300x284.jpg" alt="">
+                                   </a>
+                              </div>
+                              <div class="card-content3 card-animation">
+                                   <a class="card-image footer-image" href="#">
+                                        <img src="Homepage/image/Sapa-300x284.jpg" alt="">
+                                   </a>
+                              </div>
+                              <div class="card-content3 card-animation">
+                                   <a class="card-image footer-image" href="#">
+                                        <img src="Homepage/image/Phoco_hoian-247x300.jpg" alt="">
+                                   </a>
+                              </div>
+                              <div class="card-content3 card-animation">
+                                   <a class="card-image footer-image" href="#">
+                                        <img src="Homepage/image/offers_slide_3-247x300.jpg" alt="">
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="copy-right">
+               © All rights reserved.Thiết kế website &nbsp;
+               <img src="Homepage/image/logo.png" alt="" width="20">
+               <strong>
+                    Mona Media
+               </strong>
+          </div>
+     </footer>
+</body>
+</html>
