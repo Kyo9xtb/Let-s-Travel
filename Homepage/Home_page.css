@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+     box-sizing: border-box;
+     font-weight: 700;
+}
+.overview{
+     max-width: 1230px;
+     margin: 0 auto;
+}
+.content{
+     padding: 0 15px;
+}
+p{
+     font-size: 1em;
+     margin-bottom: 1.3em;
+     color: #b2b2b2;
+     letter-spacing: 0.02em;
+     font-weight: 400;
+}
+.btn{
+     font-size: 0.8em;
+     display: inline-block;
+     background-color: #f60;
+     line-height: 2.4em;
+     min-height: 2.5em;
+     padding: 0 1.2em;
+     letter-spacing: .03em;
+     cursor: pointer;
+     font-weight: bolder;
+     text-align: center;
+     color: #fff;
+     border-radius: 20px;
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     -ms-border-radius: 20px;
+     -o-border-radius: 20px;
+}
+.btn:hover{
+     opacity: 0.8;
+}
+@media only screen and (max-width: 480px){
+     .btn{
+          font-size: 11px;
+     }
+     .content{
+          padding: 0;
+     }
+}
+/* design checkbox */
+/* The container */
+.containercb {
+     display: inline-block;
+     position: relative;
+     padding-left: 20px;
+     cursor: pointer;
+     font-size: 16px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+} 
+/* Hide the browser's default checkbox */
+.containercb input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+     height: 0;
+     width: 0;
+} 
+/* Create a custom checkbox */
+.checkmarkcb {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 16px;
+     width: 16px;
+     background-color: #fff;
+     border: 1px solid;
+}
+/* On mouse-over, add a grey background color */
+ .containercb:hover input ~ .checkmarkcb {
+     background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.containercb input:checked ~ .checkmarkcb {
+     background-color: #FFF;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkcb:after {
+     content: "";
+     position: absolute;
+     display: none;
+}  
+/* Show the checkmark when checked */
+.containercb input:checked ~ .checkmarkcb:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.containercb .checkmarkcb:after {
+     left: 5px;
+     top: 0px;
+     width: 4px;
+     height: 12px;
+     border: solid black;
+     border-width: 0 1px 1px 0;
+     -webkit-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
+/* design button */
+/* The container */
+.containerbt {
+     display: inline-block;
+     position: relative;
+     padding-left: 25px;
+     cursor: pointer;
+     font-size: 16px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+   }
+/* Hide the browser's default radio button */
+.containerbt input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+}
+/* Create a custom radio button */
+.checkmarkbt {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 15px;
+     width: 15px;
+     background-color: #eee;
+     border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.containerbt:hover input ~ .checkmarkbt {
+     background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.containerbt input:checked ~ .checkmarkbt {
+     background-color: #FFF;
+     border: 1px solid blue;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkbt:after {
+     content: "";
+     position: absolute;
+     display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.containerbt input:checked ~ .checkmarkbt:after {
+     display: block;
+}
+/* Style the indicator (dot/circle) */
+.containerbt .checkmarkbt:after {
+         top: 1.5px;
+        left: 1.5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: blue;
+}
+@media only screen and (max-width: 480px){
+     /* width */
+     ::-webkit-scrollbar {
+          width: 4px;
+     } 
+     /* Track */
+     ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 10px;
+     }
+     /* Handle */
+     ::-webkit-scrollbar-thumb {
+          background: #888; 
+          border-radius: 10px;
+     }
+     /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+          background: #b30000; 
+     }
+}
+/* Header */
+.section-header{
+     padding: 30px 0;
+}
+.bg{
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     position: relative;
+}
+.bg-header{
+     background-image: url(image/phu-quoc.jpg);     
+}
+.overplay{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.4);
+}
+.description{
+     position: relative;
+     z-index: 5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.header{
+     height: 800px;
+}
+.header-content{
+     width: 80%;
+     text-align: center;
+     color: #fff;
+}
+.text-uppercase{
+     font-size: 2.9em;
+     margin: 0.2em 0;
+     line-height: 1;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+}
+.header-content h2 span{
+     color: #f60;
+}
+.header-content h4{
+     font-size: 1.5em;
+     margin: 0.6em 0;
+}
+.sub-header{
+     margin: 1em 0;
+     color: #c3c3c3;
+}
+.btn-header{
+     font-size: 1.15em;
+     margin: 0.5em 0;
+     border-radius: 30px;
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     -ms-border-radius: 30px;
+     -o-border-radius: 30px;
+}
+@media only screen and (max-width: 768px){
+     .text-uppercase{
+          font-size: 2.5056em;
+     }
+     .header-content h4{
+          font-size: 1.3em;
+     }
+     .header-content p{
+          font-size: 0.864em;
+          margin: 0.864em 0;
+     }
+}
+@media only screen and (max-width: 480px){
+     .text-uppercase{
+          font-size: 1.9em;
+     }
+     .header-content h4{
+          font-size: 1em;
+     }
+     .header-content p{
+          font-size: 0.68em;
+          margin: 0.68em 0;
+     }
+     .btn-header{
+          font-size: 11px;
+     }
+}
+/* Search */
+.search{
+     position: relative;
+     z-index: 10;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: -80px;
+}
+.search li{
+     list-style: none;
+}
+.search-link{
+     display: inline-block;
+     border: 0px solid #ccc;
+     border-top: 0px solid #ccc;
+     color: #fff;
+     background: rgba(0, 0, 0, 0.40);
+     padding: 15px 50px;
+}
+.search div:last-child{
+     width: 100%;
+     background-color: #f60;
+     padding: 45px 0 35px;
+     text-align: center;
+}
+.left{
+     border-top-left-radius: 15px;
+     color: #fff;
+     background-color: #f60;
+}
+.right{
+     border-top-right-radius: 15px;
+}
+.right:hover{
+     background: rgba(0, 0, 0, 0.60);
+     color: #ff6600;
+}
+.search-box{
+     font-size: 1em;
+     line-height: 1.2em;
+     font-weight: 400;
+     border: 1px solid #fff;
+     background-color: #fff;
+     margin: 0;
+     padding: .6em .8em;
+     display: inline-block;
+     position: relative;
+}
+.sub-box{
+     position: absolute;
+     display: none;
+     text-align: left;
+     background-color: #fff;
+     left: 0;
+     top: 40px;
+     border: 1px solid rgba(0,0,0,.1);
+     padding: 1em 1.5em;
+     z-index: 10;
+}
+.category{
+     width: 480%;
+}
+.price{
+     width: 500%;
+}
+.day{
+     width: 200%;
+}
+.day li{
+     display: inline-block;
+}
+.sub-box li{
+     font-size: 1.3em;
+     margin: 0 0 0.8em 1.3em;
+}
+.start{
+     width: 250%;
+}
+.sub-box li:first-child, .sub-box li:nth-child(2){
+     display: inline-block;
+}
+.search-box:hover .sub-box{
+     display: block;
+}
+.search-box i {
+     margin-left: 15px;
+     transition: all 0.6s linear;
+     -webkit-transition: all 0.6s linear;
+     -moz-transition: all 0.6s linear;
+     -ms-transition: all 0.6s linear;
+     -o-transition: all 0.6s linear;
+}
+.search-box:hover i {
+     transform: rotate(180deg);
+     -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+     -ms-transform: rotate(180deg);
+     -o-transform: rotate(180deg);
+}
+.list-border{
+    border-left: 1px solid rgba(0,0,0,.1);
+    margin-left: 7.5px;
+}
+.btn-search{
+     border-radius: 99px;
+     background: #333;
+     color: #fff;
+     border: 1px solid #333;
+}
+@media only screen and (max-width: 768px){
+     
+}
+@media only screen and (max-width: 480px){
+     .search{
+          margin-top: -160px;
+     }
+     .card-search{
+          justify-content: center;
+     }
+     .search-box{
+          margin-bottom: 10px;
+     }
+     .sub-box{
+          padding: 0.5em 0.75em;
+     }
+     .sub-box li{
+          margin-bottom: 0.4em;
+          margin-left: 0.65em;
+     }
+     .category{
+          width: 250%;
+     }
+     .price{
+          width: 280%;
+     }
+     .day{
+          width: 150%;
+          left: -35px;
+     }
+     .start{
+          width: 200%;
+     }
+}
+/* The most attractive tours 2020 */
+.tours-2020{
+     padding: 60px 0 30px;
+     text-align: center;
+}
+.tours-image{
+     padding-top: 100%;
+     position: relative;
+}
+.tours-image::after {
+     position: absolute;
+     z-index: 1;
+     content: "";
+     background-color: rgba(0, 0, 0, 0.4);
+     width: 100%;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+}
+.title{
+     font-size: 2em;
+     text-transform: uppercase;
+     line-height: 1.3em;
+     color: #1c1c1c;
+     margin-bottom: 0.5em;
+}
+.distance{
+     padding: 0 15px 30px;
+     text-align: center;
+}
+.card-content{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     z-index: 2;
+}
+.card-content h2{
+     color: #fff;
+     margin: .2em 0;
+     line-height: 1;
+     font-size: 1.5em;
+}
+.card-icon{
+     color: yellow;
+     font-size: 0.7em;
+     letter-spacing: 5px;
+     margin: 1em 0;
+}
+.sub-content{
+     font-size: 17px;
+     margin: 12px 0;
+     color: #f1f1f1;
+}
+@media only screen and (max-width: 768px){
+     .tours-image{
+          padding-top: 200%;
+     }
+}
+@media only screen and (max-width: 480px){
+     .tours-image{
+          padding-top: 100%;
+     }
+     .distance{
+          width: 100%;
+     }
+}
+/* Resort */
+.bg-resort{
+     background-image: url(image/tour_slider_phuquoc-1-1024x258.jpg);
+}
+.resort{
+     height: 350px;
+}
+.sub-resort{
+     padding: 1em 0;
+     color: #f1f1f1;
+}
+/* Attractive tours */
+.distance-attractive{
+     padding: 0;
+}
+.attractive-image{
+     padding-top: 60%;
+}
+@media only screen and (max-width: 768px){
+     
+}
+@media only screen and (max-width: 480px){
+     .distance-attractive{
+          width: 100%;
+     }
+}
+/* Famous tourist places */
+.famous{
+     padding: 80px 0 30px;
+     text-align: center;
+}
+.famous-image{
+     padding-top: 120%;
+}
+.famous-content{
+     padding: 0 30px 30px;
+     display: flex;
+     align-items: flex-start;
+}
+.famous-content h3{
+     font-size: 17px;
+     margin: 3.4px 0;
+}
+.famous-sub{
+     font-size: 00.7em;
+     padding: 00.7em 0;
+     color: #fff;
+     text-align: left;
+}
+@media only screen and (max-width: 768px){
+     .famous-image{
+          padding-top: 220%;
+     }
+}
+@media only screen and (max-width: 480px){
+     .famous-image{
+          padding-top: 120%;
+     }
+}
+/* Tourist Cities */
+.card-content2{
+     width: 50%;
+     position: relative;
+}
+.tourist-image{
+     padding-top: 80%;
+}
+.tourist-image img{
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+}
+.tourist-content{
+     display: flex;
+     align-items: flex-start;
+     color: #fff;
+     padding: 0 30px 30px;
+}
+.tourist-content h2{
+     text-transform: capitalize;
+}
+.tourist-content h4{
+     font-size: 15px;
+     margin: 9px 0;
+}
+.tourist-content h4 span{
+     color: #f60;
+}
+.tourist-content a{
+     font-size: 0.6em;
+}
+.northern-city, .southern-city{
+     background-image: url(image/360px-Vietnam_map.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+     position: relative;
+}
+.northern-city{
+     background-position: 0% 0%;
+}
+.southern-city{
+     background-position: 100% 100%;
+}
+.mark{
+     background-color: rgba(190, 190, 190, 0.2);
+}
+.city-content{
+     width: 90%;
+     height: 100%;
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 0 auto;
+     color: #1c1c1c;
+}
+.city-content h2{
+     font-size: 29px;
+     margin: 6px 0;   
+}
+.city-content p{
+     font-size: 15px;
+     margin: 15px 0;
+     color: #1c1c1c;
+}
+.city-content h4{
+     font-size: 15px;
+     margin: 9px 0;
+}
+.city-content ul{
+     margin-bottom: 1.3em;
+     margin-left: 0.5em;
+}
+.city-content ul li{
+     font-size: 13px;
+     margin-left: 8px;
+     margin-bottom: 17px;
+}
+@media only screen and (max-width: 768px){
+     
+}
+@media only screen and (max-width: 480px){
+     .southern-city, .northern-city{
+          max-height: 300px;
+          overflow: auto;
+     }
+     .mark{
+          height: max-content;
+     }
+     .card-content2{
+          width: 100%;
+     }
+     .city-content{
+          position: relative;
+          display: block;
+          width: 60%;
+          margin-left: 5%;
+     }
+}

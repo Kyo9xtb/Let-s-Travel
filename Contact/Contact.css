@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+     box-sizing: border-box;
+     font-weight: 700;
+}
+.overview{
+     max-width: 1230px;
+     margin: 0 auto;
+}
+.content{
+     padding: 0 15px 30px;
+}
+.menu-contact{
+    height: 100px;
+    padding-top: 20px;
+}
+/* Map */
+.map{
+    padding: 30px 0;
+}
+.map iframe{
+    width: 100%;
+    height: 450px;
+}
+/* Contact */
+.bg-contact{
+    background-image: url(image/bg-section-contact-1024x533.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.bg-contact img{
+    width: 100%;
+    height: 100%;
+}
+.contact-us{
+    background-color: rgb(255, 221, 0);
+    padding: 50px 30px 20px 30px;
+    text-align: center;
+}
+.contact-us h2{
+    color: #1c1c1c;
+    font-size: 1.6em;
+    line-height: 1.3;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+.contact-us p{
+    color: #353535;
+}
+.contact-us form input, .contact-us form textarea{
+    display: block;
+    width: 100%;
+    padding: 0 .75em;
+    height: 2.507em;
+    font-size: .97em;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #555;
+    border: 0px solid #eee;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0%);
+    margin-bottom: 1em;
+}
+.contact-us form textarea{
+    padding-top: 0.7em;
+    min-height: 120px;
+}
+.btn-contact{
+    width: 170px;
+    height: 40px;
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
+    border-radius: 50px;
+    padding: 0px;
+    text-align: center;
+    color: #ffdd00;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-contact:hover{
+    box-shadow: inset 0 0 0 100px rgb(0 0 0 / 20%);
+}
+@media only screen and (max-width: 768px){
+    
+}
+@media only screen and (max-width: 480px){
+    .bg-contact{
+        flex-wrap: wrap;
+    }
+}
